@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Introduccion a Node.js - Jose Fresco jfresco@baufest.com</title>
+    <title>Node.js - Jose Fresco</title>
     
     <meta name="description" content="" />
     <meta name="author" content="Jose Fresco" />
 
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/prez-nodejs.css" rel="stylesheet" />
     <link href="css/prism.css" rel="stylesheet" />    
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -111,21 +111,15 @@
 </svg><br />
         Node is server-side JavaScript <br />
         built on Google's <b>V8</b> runtime
+
+        <!--
+            Nodejs home page
+            GitHub
+            Show console
+        -->
     </div>
 
     <div class="step" data-x="2000" data-y="0" data-z="0">
-      
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="200px" height="200px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<path id="paper-plane-7-icon" d="M108.733,214.765l99.057,24.073l143.58-99.229L244.253,252.65l108.704,103.043L438.234,50
-    L108.733,214.765z M231.15,371.505l46.916-54.255l-46.916-45.199V371.505z M112.577,381.762l-24.713-8.698l82.53-77.479
-    l24.663,6.801L112.577,381.762z M168.576,455.36l-22.713-9.698l49.915-50.231l22.663,7.801L168.576,455.36z M98.479,462
-    l-24.713-8.698l111.42-110.719l24.663,6.801L98.479,462z"/>
-</svg>
-<br />
-        <h1><b>Event-driven</b> non-blocking I/O</h1></div>
-    
-    <div class="step" data-x="4000" data-y="0" data-z="0">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      width="200" height="200px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
 <path id="css-code-icon" d="M140.869,256c17.686,7.75,30.25,24.5,30.25,54v34.457c0,24.955,22.379,32.912,41.548,33.494v36.861
@@ -139,7 +133,7 @@
         <b>Functions</b> are first-class objects
     </div>
 
-    <div class="step" data-x="4000" data-y="1000" data-z="0">
+    <div class="step" data-x="2000" data-y="1000" data-z="0">
 <div>
         <pre>
         <code class="language-javascript">
@@ -150,7 +144,7 @@ $("#myButton").on("click", function(e) {
         </div>
     </div>
 
-    <div class="step" data-x="4000" data-y="1500" data-z="0">
+    <div class="step" data-x="2000" data-y="1500" data-z="0">
     <!--
         Functions are objects: they have methods and properties...
     -->
@@ -166,7 +160,7 @@ add(2, 3); // returns 5</code>
         </div>
     </div>
 
-    <div class="step" data-x="4000" data-y="2000" data-z="0">
+    <div class="step" data-x="2000" data-y="2000" data-z="0">
     <!--
         ... can be assigned to variables...
     -->
@@ -182,7 +176,7 @@ add(2, 3); // returns 5</code>
         </div>
     </div>
 
-    <div class="step" data-x="4000" data-y="2500" data-z="0">
+    <div class="step" data-x="2000" data-y="2500" data-z="0">
     <!-- 
         ... and be passed as parameters to other functions. 
         A function passed as parameter is often called 'callback'
@@ -200,10 +194,11 @@ doOperation(add, 2, 3); // returns 5</code>
 
         <!--
             Code sample: reading a file synchronously and asynchronously
+            http://nodejs.org/api/fs.html#fs_fs_readfile_filename_options_callback
         -->
     </div>
 
-    <div class="step hidden" data-x="4500" data-y="2000" data-z="600">
+    <div class="step hidden" data-x="2500" data-y="2000" data-z="600">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      width="200px" height="200px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
 <path id="share-3-icon" d="M456.363,217.15l-53.111,98.847l-13.448-32.978C318.75,319.965,297.6,375.414,293.297,462h-71.764
@@ -216,7 +211,26 @@ doOperation(add, 2, 3); // returns 5</code>
         Think <b>asynchronously</b>
     </div>
 
-    <div class="step" data-x="8000" data-y="0" data-z="0" data-rotate-x="90">
+<div class="step" data-x="4500" data-y="2000" data-z="0">
+      
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="200px" height="200px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+    <path id="paper-plane-7-icon" d="M108.733,214.765l99.057,24.073l143.58-99.229L244.253,252.65l108.704,103.043L438.234,50
+        L108.733,214.765z M231.15,371.505l46.916-54.255l-46.916-45.199V371.505z M112.577,381.762l-24.713-8.698l82.53-77.479
+        l24.663,6.801L112.577,381.762z M168.576,455.36l-22.713-9.698l49.915-50.231l22.663,7.801L168.576,455.36z M98.479,462
+        l-24.713-8.698l111.42-110.719l24.663,6.801L98.479,462z"/>
+    </svg>
+    <br />
+    
+    <h1>
+        <b>Event-driven</b> non-blocking I/O
+    </h1>
+
+    <!--
+        Code sample: http async
+    -->
+</div>
+<div class="step" data-x="8000" data-y="0" data-z="0" data-rotate-x="90">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      width="200px" height="200px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
         <path id="shipping-box-3-icon" d="M330.916,335.512l5.75-3.348v29.426l-5.75,3.348V335.512z M321.13,370.637l5.75-3.35v-29.426
@@ -227,9 +241,11 @@ doOperation(add, 2, 3); // returns 5</code>
             v-53.389l-34,18.83v146.799l119.459-69.549V205.867z M344.682,356.924l5.756-3.352v-29.426l-5.756,3.352V356.924z M378.25,337.381
             l4.84-2.818l0.91-0.535v-29.42l-5.75,3.348V337.381z M354.307,351.32l5.75-3.348v-29.426l-5.75,3.348V351.32z"/>
     </svg>
-<br />
-        Modularization: <b>require</b> and <b>npm</b>
-    </div>
+    <br />
+    
+    Modularization: <b>require</b> and <b>npm</b>
+
+</div>
 
     <div class="step hidden" data-x="7900" data-y="-100" data-z="-800" data-rotate-x="90">
         <ul>
@@ -304,7 +320,8 @@ if ("ontouchstart" in document.documentElement) {
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="js/impress.js"></script>
-<script src="js/prism.js"></script><script>
+<script src="js/prism.js"></script>
+<script>
 $(function() {
     impress().init();
     

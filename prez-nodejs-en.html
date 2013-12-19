@@ -14,6 +14,9 @@
     <link href="css/prism.css" rel="stylesheet" />    
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <!-- All links opens in new tab -->
+    <base target="_blank">
 </head>
 
 <body class="impress-not-supported">
@@ -94,8 +97,10 @@
                  style="fill:#83cd29;fill-opacity:1;fill-rule:evenodd;stroke:none" /></g></g></g></g>
              </svg> <br />
              <div class="presenter">
-                 <div class="subtitle">Jos&#233; Fresco</div> <br />
-                 <div class="subtitle">jfresco@baufest.com</div>
+                 <div class="subtitle">Jos&#233; Fresco</div>
+                 <div class="subtitle">
+                    <a href="mailto:jfresco@baufest.com">jfresco@baufest.com</a>
+                 </div>
              </div>
     </div>
     
@@ -113,6 +118,9 @@
         built on Google's <b>V8</b> runtime
 
         <!--
+            Node is a platform: a JavaScript interpreter (Google's V8 engine) plus a set
+            of built-in libraries oriented to Web
+
             Nodejs home page
             GitHub
             Show console
@@ -177,6 +185,15 @@ add(2, 3); // returns 5</code>
     </div>
 
     <div class="step" data-x="2000" data-y="2500" data-z="0">
+    <pre>
+    <code class="language-javascript">
+var add = new Function('x', 
+                       'y', 
+                       'return x + y');</code>
+</pre>
+    </div>
+
+    <div class="step" data-x="2000" data-y="3000" data-z="0">
     <!-- 
         ... and be passed as parameters to other functions. 
         A function passed as parameter is often called 'callback'
@@ -184,7 +201,7 @@ add(2, 3); // returns 5</code>
 <div>
         <pre>
         <code class="language-javascript">
-var doMathOperation = function(operation, x, y) {
+var doOperation = function(operation, x, y) {
   return operation(x, y);
 };
 
@@ -230,6 +247,42 @@ doOperation(add, 2, 3); // returns 5</code>
         Code sample: http async
     -->
 </div>
+
+<div class="step" data-x="6500" data-y="2000" data-z="0">
+    <!-- Devil icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Sinner" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+    <g id="Head_35_">
+        <path d="M50,25c18.196,0,33,14.804,33,33S68.196,91,50,91S17,76.196,17,58S31.804,25,50,25 M50,17C27.355,17,9,35.355,9,58   s18.355,41,41,41c22.643,0,41-18.355,41-41S72.643,17,50,17L50,17z"/>
+    </g>
+    <path id="Indifferent_3_" fill-rule="evenodd" clip-rule="evenodd" d="M65.111,77.464c0,2.072-1.869,3.758-4.172,3.758H39.062  c-2.304,0-4.171-1.686-4.171-3.758l0,0c0-2.075,1.867-3.758,4.171-3.758h21.878C63.242,73.706,65.111,75.389,65.111,77.464  L65.111,77.464z"/>
+    <circle id="Eye_37_" fill-rule="evenodd" clip-rule="evenodd" cx="38.187" cy="50.094" r="6.522"/>
+    <circle id="Eye_36_" fill-rule="evenodd" clip-rule="evenodd" cx="61.812" cy="50.093" r="6.522"/>
+    <path d="M24.582,26.6c-9.667,0-11.5-15.354-11.5-15.354s-6.666,17.687,1.75,27.02c0.156,0.173,0.312,0.336,0.471,0.488"/>
+    <path d="M74.994,26.6c9.668,0,11.5-15.354,11.5-15.354s6.668,17.687-1.75,27.02c-0.154,0.173-0.312,0.336-0.469,0.488"/>
+    </svg>
+    <br />
+
+    Callback <b>hell</b>
+
+</div>
+
+<div class="step" data-x="6500" data-y="2000" data-z="0" data-rotate-x="90">
+    <!-- Saint icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Saintly" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+    <g id="Head_27_">
+        <path d="M50,25c18.196,0,33,14.804,33,33S68.196,91,50,91c-18.196,0-33-14.804-33-33S31.804,25,50,25 M50,17   C27.357,17,9,35.355,9,58s18.356,41,41,41c22.644,0,41-18.355,41-41S72.645,17,50,17L50,17z"/>
+    </g>
+    <path id="Happy_6_" fill-rule="evenodd" clip-rule="evenodd" d="M65.941,72.209c-1.432,6.443-8.104,11.316-16.116,11.316  c-8.014,0-14.685-4.875-16.115-11.318"/>
+    <circle id="Eye_27_" fill-rule="evenodd" clip-rule="evenodd" cx="38.188" cy="50.094" r="6.522"/>
+    <circle id="Eye_26_" fill-rule="evenodd" clip-rule="evenodd" cx="61.812" cy="50.092" r="6.521"/>
+    <ellipse id="Halo_2_" fill-rule="evenodd" clip-rule="evenodd" cx="50" cy="9.916" rx="34" ry="5.75"/>
+    </svg>
+    <br />
+
+    <b>Promise</b> pattern
+
+</div>
+
 <div class="step" data-x="8000" data-y="0" data-z="0" data-rotate-x="90">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      width="200px" height="200px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
@@ -306,6 +359,14 @@ doOperation(add, 2, 3); // returns 5</code>
     <div class="step" data-x="22000" data-y="0" data-z="0">
         Future
     </div>
+
+    <div class="step" data-x="24000" data-y="0" data-z="0">
+        Questions
+    </div>
+
+    <div class="step" data-x="26000" data-y="0" data-z="0">
+        Thanks!
+    </div>
 </div>
 
 <div class="hint">
@@ -345,8 +406,6 @@ $(function() {
     $("#cover").on('impress:stepleave', function () {
         $("#toplogo").fadeIn(5000);
     });
-
-    //var editor = CodeMirror.fromTextArea(document.getElementById("functions"), { lineNumbers: true, theme: 'solarized light' });
 
     // Updates npm package count periodically
    setInterval(function() { 
